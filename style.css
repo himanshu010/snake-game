@@ -26,9 +26,6 @@ body {
 
 #gameover {
   color: white;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center;
   margin: 20px;
   font-size: 15px !important;
   margin-bottom: -60px !important;
