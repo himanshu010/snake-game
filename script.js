@@ -183,7 +183,7 @@ function gameloop() {
     clearInterval(gameloop);
     // game_over_true();
     go.style.display = "block";
-
+    reset.style.display = "block";
     return;
   }
   draw();
@@ -192,11 +192,31 @@ function gameloop() {
 reset.style.display = "none";
 reset.onclick = function () {
   init();
+  go.style.display = "none";
+  reset.style.display = "none";
 };
 init();
 start.onclick = function () {
   // init();
   var f = setInterval(gameloop, 100);
   start.style.display = "none";
-  reset.style.display = "block";
 };
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+var animateButton = function (e) {
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove("animate");
+
+  e.target.classList.add("animate");
+  setTimeout(function () {
+    e.target.classList.remove("animate");
+  }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener("click", animateButton, false);
+}
