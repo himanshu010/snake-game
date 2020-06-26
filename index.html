@@ -6,9 +6,34 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <canvas id="mycanvas"> </canvas>
+    <button id="start" type="button">Start</button>
+    <button id="reset" type="button">Restart</button>
+
+    <div class="canvascon">
+      <canvas id="mycanvas"> </canvas>
+    </div>
+    <div id="gameover">Game Over!<br />Click Restart to Play Again</div>
+    <div class="keypad">
+      <div class="buttons">
+        <div class="row row1">
+          <button class="up" id="up">up</button>
+        </div>
+        <div class="row row2">
+          <button class="left" id="left">left</button>
+          <button class="right" id="right">right</button>
+        </div>
+        <div class="row row3">
+          <button class="down" id="down">down</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
