@@ -2,20 +2,26 @@ body {
   background-color: black !important;
 }
 #reset {
+  margin-left: 20px;
   margin-top: 40px !important;
   margin-bottom: -30px !important;
+  text-emphasis: center;
+  height: auto !important;
+  font-size: 15px !important;
 }
 #start {
+  margin-left: 20px;
   margin-top: 40px !important;
   margin-bottom: -30px !important;
 }
 
 .head {
-  height: 60px !important;
-  font-size: 60px;
+  /* height: aut!important */
+  font-size: 30px;
   display: flex;
   justify-content: center;
   color: #ff0081;
+  margin-bottom: -40px;
 }
 
 #gameover {
@@ -110,9 +116,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .mycanvas {
-    min-width: 1000px !important;
-    min-height: 1000px !important;
+  #mycanvas {
+    min-width: 600px !important;
+    min-height: 600px !important;
   }
   .keypad {
     display: none !important;
@@ -234,6 +240,9 @@ body {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .bubbly-button {
-  height: 60px !important;
+  height: 20px !important;
+  font-size: 20px !important;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
