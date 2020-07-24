@@ -48,7 +48,7 @@ body {
 #mycanvas {
   margin-top: 40px;
   width: 400px;
-  height: 400px;
+  height: 350px;
   border: 10px solid red;
   background-color: yellow;
 }
