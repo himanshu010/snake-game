@@ -1,1 +1,85 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Snake Xenzia</title><link rel="stylesheet" type="text/css" href="./style.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" /></head><body><div class="head">Snake Xenzia</div> <button class="bubbly-button" id="start" type="button"><div style="display: flex; align-items: center; justify-content: center;"> Start</div> </button> <button class="bubbly-button" id="reset" type="button"><div style=" display: flex; text-align: center !important; justify-content: center; " > Restart</div> </button><div class="canvascon"> <canvas id="mycanvas"> </canvas></div><div id="gameover"><div style="display: flex; justify-content: center;"> Game Over!😭<br />Click Restart to Play Again</div></div><div class="keypad"><div class="buttons"><div class="row row1"><button class="up bubbly-button" id="up"><div style="display: flex; justify-content: center;">up</div> </button></div><div class="row row2"> <button class="left bubbly-button" id="left"><div style="display: flex; justify-content: center;">left</div> </button> <button class="right bubbly-button" id="right"><div style="display: flex; justify-content: center;">right</div> </button></div><div class="row row3"> <button class="down bubbly-button" id="down"><div style="display: flex; justify-content: center;">down</div> </button></div></div></div> <script src="script.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Xenzia</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./light-theme.css"
+      id="theme"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head">
+      Snake Xenzia
+      <div>
+        <button onclick="switchSheet()" class="bubbly-button s-but" id="s-but">
+          Dark🌚
+        </button>
+      </div>
+    </div>
+    <button class="bubbly-button" id="start" type="button">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        Start
+      </div>
+    </button>
+    <button class="bubbly-button" id="reset" type="button">
+      <div
+        style="
+          display: flex;
+          text-align: center !important;
+          justify-content: center;
+        "
+      >
+        Restart
+      </div>
+    </button>
+    <div class="canvascon"><canvas id="mycanvas"> </canvas></div>
+    <div id="gameover">
+      <div style="display: flex; justify-content: center;">
+        Game Over!😭<br />Click Restart to Play Again
+      </div>
+    </div>
+    <div class="keypad">
+      <div class="buttons">
+        <div class="row row1">
+          <button class="up bubbly-button" id="up">
+            <div style="display: flex; justify-content: center;">up</div>
+          </button>
+        </div>
+        <div class="row row2">
+          <button class="left bubbly-button" id="left">
+            <div style="display: flex; justify-content: center;">left</div>
+          </button>
+          <button class="right bubbly-button" id="right">
+            <div style="display: flex; justify-content: center;">right</div>
+          </button>
+        </div>
+        <div class="row row3">
+          <button class="down bubbly-button" id="down">
+            <div style="display: flex; justify-content: center;">down</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="foot"
+      style="display: flex; justify-content: center; margin-top: 50px;"
+    >
+      Made By&nbsp<a href="https://himanshuaswal.codes">Himanshu Aswal&nbsp</a>
+      with ❤ and ☕
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
